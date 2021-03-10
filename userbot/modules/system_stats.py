@@ -168,8 +168,6 @@ async def amireallyalive(alive):
         f"⫸ ᴜsᴇʀɴᴀᴍᴇ \n ➲ @{user.username} \n" 
         f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n" 
         f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n" 
-        f"⫸ ʙᴏᴛ ᴠᴇʀsɪᴏɴ\n ➲ {BOT_VER} \n" 
-        f"⫸ ᴍᴏᴅᴜʟᴇ \n ➲ {len(modules)} \n\n" 
         f"⫸ ʀᴇᴘᴏsɪᴛᴏʀʏ : [Venom](https://github.com/bryanasfuk/Venom)\n
         ⫸ Channel Official: [Support](t.me/fckinanxiety)\n
         ⫸ sᴜᴘᴘᴏʀᴛ ʙʏ: [Leo Angkasa](t.me/fckyouasshole)\n" 
