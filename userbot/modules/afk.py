@@ -75,13 +75,13 @@ async def mention_afk(mention):
         if mention.sender_id not in USERS or chat_title not in USERS:
             if AFKREASON:
                 await mention.reply(
-                    f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
+                    f"**So Sibuk Dulu Hehehe.** (Since: {afk_str})"
                     f"\nReason: `{AFKREASON}`."
                 )
             else:
                 await mention.reply(
-                    f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
-                    "\n**Sabar Kintilah Nanti Ae Asw.**"
+                    f"**Lagi So Sibuk.** (Since: {afk_str})"
+                    "\n**Sabar Ya Ganteng Nanti Balik Lagi.**"
                 )
             if mention.sender_id is not None:
                 USERS.update({mention.sender_id: 1})
@@ -91,13 +91,13 @@ async def mention_afk(mention):
             if USERS[mention.sender_id] % randint(2, 4) == 0:
                 if AFKREASON:
                     await mention.reply(
-                        f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
+                        f"**So Sibuk Dulu Hehehe.** (Since: {afk_str})"
                         f"\nReason: `{AFKREASON}`."
                     )
                 else:
                     await mention.reply(
-                        f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
-                        "\n** Sabar Kintilah Nanti Ae Asw.**"
+                        f"**Lagi So Sibuk.** (Since: {afk_str})"
+                        "\n** Sabar Ya Ganteng Nanti Balik Lagi.**"
                     )
             if mention.sender_id is not None:
                 USERS[mention.sender_id] += 1
@@ -162,13 +162,13 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
+                        f"**Lagi Sibuk Ganteng.** (Since: {afk_str})"
                         f"\nReason: `{AFKREASON}`."
                     )
                 else:
                     await sender.reply(
-                        f"**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
-                        "\n**Sabar Kintilah Nanti Ae Asw.**"
+                        f"**Pegi Dulu Ganteng.** (Since: {afk_str})"
+                        "\n**Sabar Babi.**"
                     )
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
@@ -176,13 +176,13 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            "**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
+                            "**Brb Hehehe.** (Since: {afk_str})"
                             f"\nReason: `{AFKREASON}`."
                         )
                     else:
                         await sender.reply(
-                            "**Gua Afk Dulu Bentaran.** (Since: {afk_str})"
-                            "\n**Sabar Kintilah Nanti Ae Asw.**"
+                            "**Pegi Dulu Ganteng.** (Since: {afk_str})"
+                            "\n**Sabar Babi.**"
                         )
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
@@ -193,7 +193,7 @@ async def afk_on_pm(sender):
 
 @register(outgoing=True, pattern=r"^\.afk(?: |$)(.*)", disable_errors=True)
 async def set_afk(afk_e):
-    """ For .afk command, allows you to inform people that you are afk when they message you """
+    """ For .afk command, Buat Gaada Notif Ke Tele Lu Ganteng """
     afk_e.text
     string = afk_e.pattern_match.group(1)
     global ISAFK
@@ -207,11 +207,11 @@ async def set_afk(afk_e):
     afk_start = start1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit("**Bye Kintil Lu Semua!**" f"\nReason: `{string}`")
+        await afk_e.edit("**Bye Sibuk Dulu Ganteng!**" f"\nReason: `{string}`")
     else:
-        await afk_e.edit("**Bye Kintil Lu Semua!**")
+        await afk_e.edit("**Bye Sibuk Dulu Ganteng!**")
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nGua Afk Dulu Mang!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nJangan Kangen!")
     ISAFK = True
     afk_time = datetime.now()
     raise StopPropagation
@@ -231,7 +231,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = not_afk.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.edit("**Assamulaikum Sih ganteng Mau Lewat!**")
+        msg = await notafk.edit("**Aku Kembali Hidup!**")
         await asyncio.sleep(3)
         await msg.delete()
         if BOTLOG:
@@ -277,9 +277,9 @@ async def type_afk_is_not_true(notafk):
 CMD_HELP.update(
     {
         "afk": ">`.afk [Optional Reason]`"
-        "\nUsage: Sets you as afk.\nReplies to anyone who tags/PM's "
+        "\nUsage: Merubah kamu menjadi afk.\nBiar gaada notif ke tele lu ganteng "
         "you telling them that you are AFK(reason)."
         "\n\n>`.unafk`"
-        "\nUsage: Switches you off from AFK mode"
+        "\nUsage: Merubah siganteng menjadi off"
     }
 )
