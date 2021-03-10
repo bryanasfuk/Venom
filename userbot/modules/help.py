@@ -21,10 +21,10 @@ async def help(event):
         else:
             msg = await event.edit("Please specify a valid module name.")
     else:
-        head = "Please specify which module do you want help for !!"
+        head = "Yang Bener Ganteng Ngetik Command nya !!"
         head2 = f"Loaded Modules : {len(CMD_HELP)}"
         head3 = "Usage: `.help` `<module name>`"
-        head4 = "List for all available command below: "
+        head4 = "List Command Dengan Kegantengan di Bawah: "
         string = ""
         sep1 = "`••••••••••••••••••••••••••••••••••••••••••••••`"
         sep2 = "`=========================================`"
