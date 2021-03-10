@@ -164,14 +164,12 @@ async def amireallyalive(alive):
     logo = ALIVE_LOGO
     output = (
         f"`★ 𝐕𝐞𝐧𝐨𝐦 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 ★`{repo.active_branch.name}`\n"
-        
         f"★ 𝐁𝐨𝐬𝐬      : {DEFAULTUSER}\n\n"
         f"★ 𝐏𝐲𝐭𝐡𝐨𝐧    :{python_version()}\n\n"
         f"★ 𝐓𝐞𝐥𝐞𝐭𝐡𝐨𝐧   : {version.__version__}\n\n"
         f"★ 𝐌𝐞𝐧𝐲𝐚𝐥𝐚   : {uptime}\n"
-            
-          f"★ 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲 : [Venom](https://github.com/bryanasfuk/Venom)\n"
-          f"★ 𝐎𝐰𝐧𝐞𝐫    : [Bryan](https://t.me/fckyouasshole)\n"
+        f"★ 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲 : [Venom](https://github.com/bryanasfuk/Venom)\n"
+        f"★ 𝐎𝐰𝐧𝐞𝐫    : [Bryan](https://t.me/fckyouasshole)\n"
     )
     if ALIVE_LOGO:
         try:
