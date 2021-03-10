@@ -169,10 +169,7 @@ async def amireallyalive(alive):
         f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n" 
         f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n" 
         f"⫸ ʀᴇᴘᴏsɪᴛᴏʀʏ : [Venom](https://github.com/bryanasfuk/Venom)\n
-        ⫸ Channel Official: [Support](t.me/fckinanxiety)\n
-        ⫸ sᴜᴘᴘᴏʀᴛ ʙʏ: [Leo Angkasa](t.me/fckyouasshole)\n" 
-       f"⫸ ʙᴀsᴇ ʙᴏᴛ: [KAMPANG-BOT](https://github.com/IrhamFadzillah/NightCore)\n" 
-       f"**ıllıllı sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ ıllıllı**")
+       f"⫸ ʙᴀsᴇ ʙᴏᴛ: [](https://github.com/IrhamFadzillah/NightCore)\n" 
     )
     if ALIVE_LOGO:
         try:
