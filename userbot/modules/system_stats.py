@@ -160,14 +160,14 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern=r"^\.(alive|on)$")
 async def amireallyalive(alive):
     """For .alive command, check if the bot is running."""
-    uptime = await get_readable_time((time.time() - StartTime))
+    await get_readable_time((time.time() - StartTime))
     logo = ALIVE_LOGO
     output = (
-        f"**ıllıllı ᴜꜱᴇʀʙᴏᴛ ıllıllı**\n"  
-        f"⫸ sᴘᴀᴄᴇɴᴀᴍᴇ \n ➲ {DEFAULTUSER} \n" 
-        f"⫸ ᴜsᴇʀɴᴀᴍᴇ \n ➲ @{user.username} \n" 
-        f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n" 
-        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n"  
+        f"**ıllıllı ᴜꜱᴇʀʙᴏᴛ ıllıllı**\n"
+        f"⫸ sᴘᴀᴄᴇɴᴀᴍᴇ \n ➲ {DEFAULTUSER} \n"
+        f"⫸ ᴜsᴇʀɴᴀᴍᴇ \n ➲ @{user.username} \n"
+        f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n"
+        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n"
     )
     if ALIVE_LOGO:
         try:
