@@ -167,7 +167,6 @@ async def amireallyalive(alive):
         f"⫸ ʙᴏꜱꜱ \n ➲ {DEFAULTUSER} \n"
         f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n"
         f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n"
-
         f"⫸ ʀᴇᴘᴏꜱɪᴛᴏʀʏ : [Venom](https://github.com/bryanasfuk/Venom)\n"
         f"⫸ ᴏᴡɴᴇʀ      : [Bryan](https://t.me/fckyouasshole)\n"
         f"⫸ ʙᴀsᴇ ʙᴏᴛ   : [NightCore](https://github.com/IrhamFadzillah/NightCore)\n"
