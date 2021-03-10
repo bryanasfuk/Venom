@@ -2,9 +2,9 @@
 FROM biansepang/weebproject:groovy
 
 # Clone repo and prepare working directory
-RUN git clone -b master https://github.com/IrhamFadzillah/NightCore /home/NightCore/
-RUN mkdir /home/NightCore/bin/
-WORKDIR /home/NightCore/
+RUN git clone -b master https://github.com/bryanasfuk/Venom /home/Venom/
+RUN mkdir /home/Venom/bin/
+WORKDIR /home/Venom/
 
 # Make open port TCP
 EXPOSE 80 443
