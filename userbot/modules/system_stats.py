@@ -164,10 +164,12 @@ async def amireallyalive(alive):
     logo = ALIVE_LOGO
     output = (
         f"`Venom Is On Fire 🔥 `{repo.active_branch.name}`\n"
+       "`━━━━━━━━━━━━━━━━━━━━━━━━━━━`\n"
         f"😈 Boss  : {DEFAULTUSER}\n\n"
         f"😈 Python : {python_version()}\n\n"
         f"😈 Tele  : {version.__version__}\n\n"
         f"😈 Bot On fire  : {uptime}\n"
+       "`━━━━━━━━━━━━━━━━━━━━━━━━━━━`\n"
     )
     if ALIVE_LOGO:
         try:
