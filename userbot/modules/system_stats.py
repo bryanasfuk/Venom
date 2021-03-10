@@ -163,13 +163,18 @@ async def amireallyalive(alive):
     uptime = await get_readable_time((time.time() - StartTime))
     logo = ALIVE_LOGO
     output = (
-        f"`★ 𝐕𝐞𝐧𝐨𝐦 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 ★`{repo.active_branch.name}`\n"
-        f"★ 𝐁𝐨𝐬𝐬      : {DEFAULTUSER}\n\n"
-        f"★ 𝐏𝐲𝐭𝐡𝐨𝐧    :{python_version()}\n\n"
-        f"★ 𝐓𝐞𝐥𝐞𝐭𝐡𝐨𝐧   : {version.__version__}\n\n"
-        f"★ 𝐌𝐞𝐧𝐲𝐚𝐥𝐚   : {uptime}\n"
-        f"★ 𝐑𝐞𝐩𝐨𝐬𝐢𝐭𝐨𝐫𝐲 : [Venom](https://github.com/bryanasfuk/Venom)\n"
-        f"★ 𝐎𝐰𝐧𝐞𝐫    : [Bryan](https://t.me/fckyouasshole)\n"
+        f"**ıllıllı ᴜꜱᴇʀʙᴏᴛ ıllıllı**\n"  
+        f"⫸ sᴘᴀᴄᴇɴᴀᴍᴇ \n ➲ {DEFAULTUSER} \n" 
+        f"⫸ ᴜsᴇʀɴᴀᴍᴇ \n ➲ @{user.username} \n" 
+        f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n" 
+        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n" 
+        f"⫸ ʙᴏᴛ ᴠᴇʀsɪᴏɴ\n ➲ {BOT_VER} \n" 
+        f"⫸ ᴍᴏᴅᴜʟᴇ \n ➲ {len(modules)} \n\n" 
+        f"⫸ ʀᴇᴘᴏsɪᴛᴏʀʏ : [Venom](https://github.com/bryanasfuk/Venom)\n
+        ⫸ Channel Official: [Support](t.me/fckinanxiety)\n
+        ⫸ sᴜᴘᴘᴏʀᴛ ʙʏ: [Leo Angkasa](t.me/fckyouasshole)\n" 
+       f"⫸ ʙᴀsᴇ ʙᴏᴛ: [KAMPANG-BOT](https://github.com/IrhamFadzillah/NightCore)\n" 
+       f"**ıllıllı sᴘᴀᴄᴇ ᴜsᴇʀʙᴏᴛ ıllıllı**")
     )
     if ALIVE_LOGO:
         try:
