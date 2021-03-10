@@ -41,9 +41,7 @@ async def gen_chlog(repo, diff):
 
 
 async def print_changelogs(event, ac_br, changelog):
-    changelog_str = (
-        f"**Update Muka Sudah Ada [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
-    )
+    changelog_str = f"**Update Muka Sudah Ada [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
     if len(changelog_str) > 4096:
         await event.edit("`Update Muka Terlalu Tampan Jadinya Gabisa Di Buka.`")
         file = open("output.txt", "w+")
@@ -137,9 +135,7 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit(
-        "`Muka Sudah Terupdate!\n" "Venom Sedang Restart... Tungguin`"
-    )
+    await event.edit("`Muka Sudah Terupdate!\n" "Venom Sedang Restart... Tungguin`")
     # Spin a new instance of bot
     args = [sys.executable, "-m", "userbot"]
     execle(sys.executable, *args, environ)
