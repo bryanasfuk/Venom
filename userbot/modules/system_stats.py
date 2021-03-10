@@ -170,7 +170,6 @@ async def amireallyalive(alive):
         f"⫸ ʀᴇᴘᴏꜱɪᴛᴏʀʏ   : [Venom](https://github.com/bryanasfuk/Venom)\n"
         f"⫸ ᴏᴡɴᴇʀ      : [Bryan](https://t.me/fckyouasshole)\n"
         f"⫸ ʙᴀsᴇ ʙᴏᴛ   : [NightCore](https://github.com/IrhamFadzillah/NightCore)\n\n"
-        f"**ĸeɢαɴтeɴɢαɴ мαĸѕιмαl**\n\n"
     )
     if ALIVE_LOGO:
         try:
