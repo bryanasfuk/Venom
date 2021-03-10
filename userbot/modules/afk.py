@@ -167,8 +167,7 @@ async def afk_on_pm(sender):
                     )
                 else:
                     await sender.reply(
-                        f"**Pegi Dulu Ganteng.** (Since: {afk_str})"
-                        "\n**Sabar Babi.**"
+                        f"**Pegi Dulu Ganteng.** (Since: {afk_str})" "\n**Sabar Babi.**"
                     )
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
