@@ -167,9 +167,7 @@ async def amireallyalive(alive):
         f"⫸ sᴘᴀᴄᴇɴᴀᴍᴇ \n ➲ {DEFAULTUSER} \n" 
         f"⫸ ᴜsᴇʀɴᴀᴍᴇ \n ➲ @{user.username} \n" 
         f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n" 
-        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n" 
-        f"⫸ ʀᴇᴘᴏsɪᴛᴏʀʏ : [Venom](https://github.com/bryanasfuk/Venom)\n
-       f"⫸ ʙᴀsᴇ ʙᴏᴛ: [](https://github.com/IrhamFadzillah/NightCore)\n" 
+        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n"  
     )
     if ALIVE_LOGO:
         try:
