@@ -1,4 +1,4 @@
-# NightCore Userbot
+# Venom Userbot
 
 <p align="center">
     <a href="https://app.codacy.com/gh/IrhamFadzillah/NightCore/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
@@ -9,7 +9,7 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=flat-square" /></a>
 </p>
 
-![logo](https://telegra.ph/file/7c29c42084e4bca205bc8.jpg)
+![logo](https://telegra.ph/file/96a1fd0aaf5ca9aa63729.jpg)
 
 ```
 #include <std/disclaimer.h>
@@ -29,11 +29,12 @@
 
 A modular Telegram Userbot running on Python3 with sqlalchemy database. 
 
-based on [ProjectBish](https://github.com/adekmaulana/ProjectBish) Userbot
+based on [ProjectBish](https://github.com/adekmaulana/ProjectBish)
+and [NightCore](https://github.com/IrhamFadzillah/NightCore)
  
  ## Host
 Click this button below to Deploy to Heroku
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/IrhamFadzillah/NightCore/tree/master"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/bryanasfuk/Venom/tree/master"> <img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku"/></a></p>
 
 ## Credits
 * [Adek Maulana](https://github.com/adekmaulana) - ProjectBish
@@ -43,7 +44,7 @@ Click this button below to Deploy to Heroku
 * [Alfianandaa](https://github.com/alfianandaa) - ProjectAlf
 * [GengKapak](https://github.com/GengKapak) - DCLXVI
 
-and [everyone](https://github.com/IrhamFadzillah/NightCore/graphs/contributors) that makes this userbot awesome :D
+and [everyone](https://github.com/bryanasfuk/Venom/graphs/contributors) that makes this userbot awesome :D
 
 ## License
-Licensed under [Raphielscape Public License](https://github.com/IrhamFadzillah/NightCore/blob/master/LICENSE) - Version 1.d, February 2020
+Licensed under [Raphielscape Public License](https://github.com/bryanasfuk/Venom/blob/master/LICENSE) - Version 1.d, February 2020
