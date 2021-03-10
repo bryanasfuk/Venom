@@ -163,7 +163,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     logo = ALIVE_LOGO
     output = (
-        f"**ıllıllı veɴoм ıllıllı**\n"
+        f"**ıllıllı veɴoм ıllıllı**\n\n"
         f"⫸ ʙᴏꜱꜱ \n ➲ {DEFAULTUSER} \n"
         f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n"
         f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n\n"
