@@ -29,9 +29,13 @@ async def _(event):
                 await bot.send_message(chat, link)
                 response = await response
             except YouBlockedUserError:
-                await event.reply("```Unblock dulu ganteng @nHentaiBot terus coba lagi```")
+                await event.reply(
+                    "```Unblock dulu ganteng @nHentaiBot terus coba lagi```"
+                )
                 return
-            if response.text.startswith("**Maaf ganteng gadapet manga yang kamu cari 😭**"):
+            if response.text.startswith(
+                "**Maaf ganteng gadapet manga yang kamu cari 😭**"
+            ):
                 await event.edit("```Kira nya Ini bukan link manga```")
             else:
                 await event.delete()
@@ -41,5 +45,8 @@ async def _(event):
 
 
 CMD_HELP.update(
-    {"nhentai": ">`.nhentai` <link / kode Nuklir>" "\nKegunaan: Lihat di Telegraph mweheheh 😈\n"}
+    {
+        "nhentai": ">`.nhentai` <link / kode Nuklir>"
+        "\nKegunaan: Lihat di Telegraph mweheheh 😈\n"
+    }
 )
