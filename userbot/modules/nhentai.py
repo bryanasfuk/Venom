@@ -29,17 +29,17 @@ async def _(event):
                 await bot.send_message(chat, link)
                 response = await response
             except YouBlockedUserError:
-                await event.reply("```Please unblock @nHentaiBot and try again```")
+                await event.reply("```Unblock dulu ganteng @nHentaiBot terus coba lagi```")
                 return
-            if response.text.startswith("**Sorry I couldn't get manga from**"):
-                await event.edit("```I think this is not the right link```")
+            if response.text.startswith("**Maaf ganteng gadapet manga yang kamu cari 😭**"):
+                await event.edit("```Kira nya Ini bukan link manga```")
             else:
                 await event.delete()
                 await bot.send_message(event.chat_id, response.message)
     except TimeoutError:
-        await event.edit("`Error: ``@nHentaiBot`` is not responding!`")
+        await event.edit("`Error: ``@nHentaiBot`` Tidak Merespon!`")
 
 
 CMD_HELP.update(
-    {"nhentai": ">`.nhentai` <link / code>" "\nUsage: view nhentai in telegra.ph XD\n"}
+    {"nhentai": ">`.nhentai` <link / kode Nuklir>" "\nKegunaan: Lihat di Telegraph mweheheh 😈\n"}
 )
