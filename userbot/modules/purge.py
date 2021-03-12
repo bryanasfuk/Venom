@@ -15,7 +15,7 @@ from userbot.events import register
 
 @register(outgoing=True, pattern=r"^\.purge$")
 async def fastpurger(purg):
-    """ For .purge command, purge all messages starting from the reply. """
+    """ For .purge command, menghapus pesan yang dj reply. """
     chat = await purg.get_input_chat()
     msgs = []
     itermsg = purg.client.iter_messages(chat, min_id=purg.reply_to_msg_id)
@@ -30,12 +30,12 @@ async def fastpurger(purg):
                 await purg.client.delete_messages(chat, msgs)
                 msgs = []
     else:
-        return await purg.edit("`I need a mesasge to start purging from.`")
+        return await purg.edit("`Saya butuh kenangan yang akan dihapus.`")
 
     if msgs:
         await purg.client.delete_messages(chat, msgs)
     done = await purg.client.send_message(
-        purg.chat_id, "`Fast purge complete!`" f"\nPurged {str(count)} messages"
+        purg.chat_id, "`Mengahapus kenangan dengan cepat!`" f"\nTerhapus {str(count)} Kenangan 🥺"
     )
     """
     if BOTLOG:
