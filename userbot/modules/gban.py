@@ -38,16 +38,16 @@ UNBAN_RIGHTS = ChatBannedRights(
 async def global_ban(event):
     if event.fwd_from:
         return
-    await event.edit("`Initiate Global Ban...`")
+    await event.edit("`Menghapus Dedemit Ini...`")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
         return
     if user.id == (await event.client.get_me()).id:
-        return await event.edit("`Why would you gban yourself?`")
+        return await event.edit("`Salah pencet maaf hehe`")
     if gban_sql.is_gbanned(user.id):
         await event.edit(
-            f"the [user](tg://user?id={user.id}) is already in gbanned list any way checking again"
+            f"the [user](tg://user?id={user.id}) Dedemit ini sudah di list Gban ganteng coba cek lagi"
         )
     else:
         gban_sql.catgban(user.id, reason)
@@ -65,10 +65,10 @@ async def global_ban(event):
 
     if len(groups_admin) == 0:
         return await event.edit(
-            "`You need to be at least admin in 1 group to gban someone!`"
+            "`Kamutuh harus jadi admin dulu ganteng!`"
         )
     await event.edit(
-        f"Initiating Global Ban to [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
+        f"Menghapus Dedemit ini dari [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` Grup"
     )
     for i in range(len(groups_admin)):
         try:
@@ -80,7 +80,7 @@ async def global_ban(event):
         except BadRequestError:
             await event.client.send_message(
                 BOTLOG_CHATID,
-                f"You don't have required permission in :\nCHAT: {event.chat.title}(`{event.chat_id}`)\nFor banning here",
+                f"Dasar Bodoh gaada hak :\nCHAT: {event.chat.title}(`{event.chat_id}`)\nBuat nge Banned orang disini",
             )
     try:
         reply = await event.get_reply_message()
@@ -88,23 +88,23 @@ async def global_ban(event):
             await reply.delete()
     except BadRequestError:
         await event.edit(
-            "`I dont have message deleting rights here! But still he was gbanned!`"
+            "`Gaada Hak Bodoh buat apus pesan!Tapi tetap si bodoh di Gban!`"
         )
     time_taken = (datetime.now() - start).seconds
     if reason:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was gbanned in `{count}` groups in `{time_taken}` seconds!\nReason: `{reason}`"
+            f"[{user.first_name}](tg://user?id={user.id}) Di Gban  `{count}` Di Grup dalam `{time_taken}` Detik!\nAlasan: `{reason}`"
         )
     else:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was gbanned in `{count}` groups in `{time_taken}` seconds!"
+            f"[{user.first_name}](tg://user?id={user.id}) Di Gban `{count}` Di Grup dalam `{time_taken}` Detik!"
         )
 
     if BOTLOG and count != 0:
         await event.client.send_message(
             BOTLOG_CHATID,
             f"#GBAN\nGlobal BAN\nUser: [{user.first_name}](tg://user?id={user.id})\nID: `{user.id}`\
-                                                \nReason: `{reason}`\nBanned in `{count}` groups\nTime taken = `{time_taken}` seconds",
+                                                \nAlasan: `{reason}`\nBanned in `{count}` grup\nWaktu yang dihabiskan = `{time_taken}` detik",
         )
 
 
@@ -112,7 +112,7 @@ async def global_ban(event):
 async def unglobal_ban(event):
     if event.fwd_from:
         return
-    await event.edit("ungbaning.....")
+    await event.edit("melepaskan dedemit.....")
     start = datetime.now()
     user, reason = await get_user_from_event(event)
     if not user:
@@ -121,7 +121,7 @@ async def unglobal_ban(event):
         gban_sql.catungban(user.id)
     else:
         await event.edit(
-            f"the [user](tg://user?id={user.id}) is not in your gbanned list"
+            f"Si [user](tg://user?id={user.id}) dia tidak masuk dalam Gban list"
         )
         return
 
@@ -138,10 +138,10 @@ async def unglobal_ban(event):
 
     if len(groups_admin) == 0:
         return await event.edit(
-            "`You need to be at least admin in 1 group to gban someone!`"
+            "`Kamutuh Harus jadi admin dulu ganteng`"
         )
     await event.edit(
-        f"initiating ungban of the [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` groups"
+        f"melepaskan dedemit [{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
     )
     for i in range(len(groups_admin)):
         try:
@@ -153,23 +153,23 @@ async def unglobal_ban(event):
         except BadRequestError:
             await event.client.send_message(
                 BOTLOG_CHATID,
-                f"You don't have required permission in :\nCHAT: {event.chat.title}(`{event.chat_id}`)\nFor unbaning here",
+                f"Bodoh Gaada hak :\nCHAT: {event.chat.title}(`{event.chat_id}`)\nBuat Ungban disini",
             )
     time_taken = (datetime.now() - start).seconds
     if reason:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was ungbanned in `{count}` groups in `{time_taken}` seconds!\nReason: `{reason}`"
+            f"[{user.first_name}](tg://user?id={user.id}) Telah di Ungban `{count}` Di Grup dalam `{time_taken}` detik!\nAlasan: `{reason}`"
         )
     else:
         await event.edit(
-            f"[{user.first_name}](tg://user?id={user.id}) was ungbanned in `{count}` groups in `{time_taken}` seconds!"
+            f"[{user.first_name}](tg://user?id={user.id}) Telah di Ungban `{count}` Di Grup dalam `{time_taken}` detik!"
         )
 
     if BOTLOG and count != 0:
         await event.client.send_message(
             BOTLOG_CHATID,
             f"#UNGBAN\nGlobal UNBAN\nUser: [{user.first_name}](tg://user?id={user.id})\nID: {user.id}\
-                                                \nReason: `{reason}`\nUnbanned in `{count}` groups\nTime taken = `{time_taken}` seconds",
+                                                \nAlasan: `{reason}`\nUnbanned di `{count}` grup\nWaktu yang di habiskan = `{time_taken}` detik",
         )
 
 
