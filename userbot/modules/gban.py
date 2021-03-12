@@ -64,9 +64,7 @@ async def global_ban(event):
             groups_admin.append(dialog.id)
 
     if len(groups_admin) == 0:
-        return await event.edit(
-            "`Kamutuh harus jadi admin dulu ganteng!`"
-        )
+        return await event.edit("`Kamutuh harus jadi admin dulu ganteng!`")
     await event.edit(
         f"Menghapus Dedemit ini dari [{user.first_name}](tg://user?id={user.id}) in `{len(groups_admin)}` Grup"
     )
@@ -137,9 +135,7 @@ async def unglobal_ban(event):
             groups_admin.append(dialog.id)
 
     if len(groups_admin) == 0:
-        return await event.edit(
-            "`Kamutuh Harus jadi admin dulu ganteng`"
-        )
+        return await event.edit("`Kamutuh Harus jadi admin dulu ganteng`")
     await event.edit(
         f"melepaskan dedemit [{user.first_name}](tg://user?id={user.id}) di `{len(groups_admin)}` grup"
     )
