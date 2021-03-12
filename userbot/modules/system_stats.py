@@ -165,10 +165,10 @@ async def amireallyalive(alive):
     output = (
         f"**▰▰▰▰▰ᴠᴇɴᴏᴍ▰▰▰▰▰▰**\n\n"
         f"✇ ʙᴏꜱꜱ              ≡  {DEFAULTUSER} \n"
-        f"✇ ᴛᴇʟᴇᴛʜᴏɴ      ≡  Versi {version.__version__} \n"
-        f"✇ ᴘʏᴛʜᴏɴ         ≡  Versi {python_version()} \n"
-        f"✇ ʙʀᴀɴᴄʜ          ≡ `{repo.active_branch.name}` \n\n"
-        f"✇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ   ≡ [Venom](https://github.com/bryanasfuk/Venom)\n\n"
+        f"✇ ᴛᴇʟᴇᴛʜᴏɴ        ≡  Versi {version.__version__} \n"
+        f"✇ ᴘʏᴛʜᴏɴ             ≡  Versi {python_version()} \n"
+        f"✇ ʙʀᴀɴᴄʜ              ≡ `{repo.active_branch.name}` \n"
+        f"✇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ         ≡ [Venom](https://github.com/bryanasfuk/Venom)\n\n"
         f"**▰▰▰▰▰ᴜꜱᴇʀʙᴏᴛ▰▰▰▰▰**\n"
     )
     if ALIVE_LOGO:
