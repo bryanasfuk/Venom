@@ -123,7 +123,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit("`Venom Success!\n" "Restarting, Tungguin...`")
+            await event.edit("`Venom Success!\n" "merestart, Tungguin...`")
     else:
         await event.edit("`Please set up HEROKU_API_KEY variable...`")
     return
@@ -210,7 +210,7 @@ async def upstream(event):
     if conf == "" and force_update is False:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
-        return await event.respond('`do ".update now or .update deploy" to update.`')
+        return await event.respond('`ketik ".update now atau .update deploy" untuk update.`')
 
     if force_update:
         await event.edit(
