@@ -163,10 +163,11 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     logo = ALIVE_LOGO
     output = (
-        f"**veɴoм ιѕ oɴ ғιre `{repo.active_branch.name}` 😈**\n\n"
-        f"⫸ ʙᴏꜱꜱ \n ➲ {DEFAULTUSER} \n"
-        f"⫸ ᴛᴇʟᴇᴛʜᴏɴ \n ➲ Versi {version.__version__} \n"
-        f"⫸ ᴘʏᴛʜᴏɴ \n ➲ Versi {python_version()} \n\n"
+        f"**veɴoм ιѕ oɴ ғιre 😈**\n\n"
+        f"⫸ ʙᴏꜱꜱ      ➲ {DEFAULTUSER} \n"
+        f"⫸ ᴛᴇʟᴇᴛʜᴏɴ  ➲ Versi {version.__version__} \n"
+        f"⫸ ᴘʏᴛʜᴏɴ    ⫸ Versi {python_version()} \n"
+        f"⫸ вrαɴcн   ➲ `{repo.active_branch.name}` \n\n"
         f"⫸ ʀᴇᴘᴏꜱɪᴛᴏʀʏ   : [Venom](https://github.com/bryanasfuk/Venom)\n"
         f"⫸ ᴏᴡɴᴇʀ      : [Bryan](https://t.me/fckyouasshole)\n"
         f"⫸ ʙᴀsᴇ ʙᴏᴛ   : [NightCore](https://github.com/IrhamFadzillah/NightCore)\n\n"
