@@ -167,8 +167,8 @@ async def amireallyalive(alive):
         f"✇ ʙᴏꜱꜱ              ≡  {DEFAULTUSER} \n"
         f"✇ ᴛᴇʟᴇᴛʜᴏɴ        ≡  Versi {version.__version__} \n"
         f"✇ ᴘʏᴛʜᴏɴ             ≡  Versi {python_version()} \n"
-        f"✇ ʙʀᴀɴᴄʜ              ≡ `{repo.active_branch.name}` \n"
-        f"✇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ         ≡ [Venom](https://github.com/bryanasfuk/Venom)\n\n"
+        f"✇ ʙʀᴀɴᴄʜ              ≡   `{repo.active_branch.name}` \n"
+        f"✇ ʀᴇᴘᴏꜱɪᴛᴏʀʏ        ≡   [Venom](https://github.com/bryanasfuk/Venom)\n\n"
         f"**▰▰▰▰▰ᴜꜱᴇʀʙᴏᴛ▰▰▰▰▰**\n"
     )
     if ALIVE_LOGO:
