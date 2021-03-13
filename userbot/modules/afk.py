@@ -75,13 +75,13 @@ async def mention_afk(mention):
         if mention.sender_id not in USERS or chat_title not in USERS:
             if AFKREASON:
                 await mention.reply(
-                    f"**So Sibuk Dulu Hehehe.** (Since: {afk_str})"
+                    f"**So sibuk dulu hehehe.** (Since: {afk_str})"
                     f"\nReason: `{AFKREASON}`."
                 )
             else:
                 await mention.reply(
-                    f"**Lagi So Sibuk.** (Since: {afk_str})"
-                    "\n**Sabar Ya Ganteng Nanti Balik Lagi.**"
+                    f"**Lagi so sibuk.** (Since: {afk_str})"
+                    "\n**Sabar ya ganteng nanti balik lagi.**"
                 )
             if mention.sender_id is not None:
                 USERS.update({mention.sender_id: 1})
@@ -91,13 +91,13 @@ async def mention_afk(mention):
             if USERS[mention.sender_id] % randint(2, 4) == 0:
                 if AFKREASON:
                     await mention.reply(
-                        f"**So Sibuk Dulu Hehehe.** (Since: {afk_str})"
+                        f"**So sibuk dulu hehehe.** (Since: {afk_str})"
                         f"\nReason: `{AFKREASON}`."
                     )
                 else:
                     await mention.reply(
-                        f"**Lagi So Sibuk.** (Since: {afk_str})"
-                        "\n** Sabar Ya Ganteng Nanti Balik Lagi.**"
+                        f"**Lagi so sibuk.** (Since: {afk_str})"
+                        "\n** Sabar ya ganteng nanti balik lagi.**"
                     )
             if mention.sender_id is not None:
                 USERS[mention.sender_id] += 1
@@ -279,6 +279,6 @@ CMD_HELP.update(
         "\nUsage: Merubah kamu menjadi afk.\nBiar gaada notif ke tele lu ganteng "
         "you telling them that you are AFK(reason)."
         "\n\n>`.unafk`"
-        "\nUsage: Merubah siganteng menjadi off"
+        "\nUsage: Merubah siganteng menjadi on kembali"
     }
 )
